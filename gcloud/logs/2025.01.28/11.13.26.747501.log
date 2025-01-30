@@ -1,0 +1,25 @@
+2025-01-28 11:13:26,747 DEBUG    root            Loaded Command Group: ['gcloud', 'app']
+2025-01-28 11:13:26,793 DEBUG    root            Loaded Command Group: ['gcloud', 'app', 'deploy']
+2025-01-28 11:13:26,794 DEBUG    root            Running [gcloud.app.deploy] with arguments: []
+2025-01-28 11:13:26,804 DEBUG    root            Loading runtimes experiment config from [gs://runtime-builders/experiments.yaml]
+2025-01-28 11:13:26,813 INFO     root            Reading [<googlecloudsdk.api_lib.storage.storage_util.ObjectReference object at 0x1083561d0>]
+2025-01-28 11:13:27,063 DEBUG    root            Flex image build option: FlexImageBuildOptions.ON_SERVER
+2025-01-28 11:13:27,064 ERROR    root            An app.yaml (or appengine-web.xml) file is required to deploy this directory as an App Engine application. Create an app.yaml file using the directions at https://cloud.google.com/appengine/docs/flexible/reference/app-yaml (App Engine flexible environment) or https://cloud.google.com/appengine/docs/standard/reference/app-yaml (App Engine standard environment) under the tab for your language.
+2025-01-28 11:13:27,065 DEBUG    root            (gcloud.app.deploy) [/Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot] could not be identified as a valid source directory or file.
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/493.0.0/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 998, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/493.0.0/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 934, in Run
+    resources = command_instance.Run(args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/493.0.0/google-cloud-sdk/lib/surface/app/deploy.py", line 122, in Run
+    return deploy_util.RunDeploy(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/493.0.0/google-cloud-sdk/lib/googlecloudsdk/command_lib/app/deploy_util.py", line 626, in RunDeploy
+    services, configs = deployables.GetDeployables(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/493.0.0/google-cloud-sdk/lib/googlecloudsdk/command_lib/app/deployables.py", line 490, in GetDeployables
+    raise exceptions.UnknownSourceError(path)
+googlecloudsdk.command_lib.app.exceptions.UnknownSourceError: [/Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot] could not be identified as a valid source directory or file.
+2025-01-28 11:13:27,068 ERROR    root            (gcloud.app.deploy) [/Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot] could not be identified as a valid source directory or file.

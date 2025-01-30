@@ -1,0 +1,27 @@
+2025-01-28 11:12:55,017 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2025-01-28 11:12:55,045 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'set']
+2025-01-28 11:12:55,046 DEBUG    root            Running [gcloud.config.set] with arguments: [SECTION/PROPERTY: "project", VALUE: "cv-building-go"]
+2025-01-28 11:12:55,064 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2025-01-28 11:12:55,858 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects/cv-building-go?alt=json HTTP/1.1" 200 None
+2025-01-28 11:12:55,867 INFO     ___FILE_ONLY___ Updated property [core/project].
+
+2025-01-28 11:12:55,868 DEBUG    root            Chosen display Format:default
+2025-01-28 11:12:55,869 INFO     root            Display format: "default"
+2025-01-28 11:12:55,870 DEBUG    root            Checking for updates...
+2025-01-28 11:12:55,874 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2025-01-28 11:12:55,986 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-2.json HTTP/1.1" 200 227832
+2025-01-28 11:12:56,050 DEBUG    root            Updating notification cache...
+2025-01-28 11:12:56,051 DEBUG    root            Activating notification: [default]
+2025-01-28 11:12:56,051 INFO     ___FILE_ONLY___ 
+
+Updates are available for some Google Cloud CLI components.  To install them,
+please run:
+  $ gcloud components update
+
+
+2025-01-28 11:12:56,053 INFO     ___FILE_ONLY___ 
+
+To take a quick anonymous survey, run:
+  $ gcloud survey
+
+

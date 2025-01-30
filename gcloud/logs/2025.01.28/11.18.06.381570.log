@@ -1,0 +1,108 @@
+2025-01-28 11:18:06,381 DEBUG    root            Loaded Command Group: ['gcloud', 'app']
+2025-01-28 11:18:06,426 DEBUG    root            Loaded Command Group: ['gcloud', 'app', 'deploy']
+2025-01-28 11:18:06,427 DEBUG    root            Running [gcloud.app.deploy] with arguments: []
+2025-01-28 11:18:06,436 DEBUG    root            Loading runtimes experiment config from [gs://runtime-builders/experiments.yaml]
+2025-01-28 11:18:06,444 INFO     root            Reading [<googlecloudsdk.api_lib.storage.storage_util.ObjectReference object at 0x105a35e50>]
+2025-01-28 11:18:06,643 DEBUG    root            Flex image build option: FlexImageBuildOptions.ON_SERVER
+2025-01-28 11:18:06,650 INFO     root            Executing staging command: [/opt/homebrew/share/google-cloud-sdk/platform/google_appengine/go-app-stager /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/app.yaml /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp1pn4w2nj/tmpmogd3ywt]
+
+
+2025-01-28 11:18:06,650 DEBUG    root            Executing command: ['/opt/homebrew/share/google-cloud-sdk/platform/google_appengine/go-app-stager', '/Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/app.yaml', '/Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot', '/var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp1pn4w2nj/tmpmogd3ywt']
+2025-01-28 11:18:06,679 INFO     root            ------------------------------------ STDOUT ------------------------------------
+building with dependencies from go.mod
+------------------------------------ STDERR ------------------------------------
+2025/01/28 11:18:06 staging for go1.21
+main-package: .
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/.gcloudignore to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp1pn4w2nj/tmpmogd3ywt/.gcloudignore
+skipping /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/.git
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/.gitignore to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp1pn4w2nj/tmpmogd3ywt/.gitignore
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/README.md to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp1pn4w2nj/tmpmogd3ywt/README.md
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/app.yaml to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp1pn4w2nj/tmpmogd3ywt/app.yaml
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/assets/forms/daily_status.json to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp1pn4w2nj/tmpmogd3ywt/assets/forms/daily_status.json
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/cmd/main.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp1pn4w2nj/tmpmogd3ywt/cmd/main.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/config/config.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp1pn4w2nj/tmpmogd3ywt/config/config.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/config/config.yaml to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp1pn4w2nj/tmpmogd3ywt/config/config.yaml
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/db/migrations/20250120091611_initial_schema.sql to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp1pn4w2nj/tmpmogd3ywt/db/migrations/20250120091611_initial_schema.sql
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/go.mod to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp1pn4w2nj/tmpmogd3ywt/go.mod
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/go.sum to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp1pn4w2nj/tmpmogd3ywt/go.sum
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/handlers/api/daily_status.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp1pn4w2nj/tmpmogd3ywt/internal/handlers/api/daily_status.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/handlers/api/handler.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp1pn4w2nj/tmpmogd3ywt/internal/handlers/api/handler.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/handlers/api/weekly_status.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp1pn4w2nj/tmpmogd3ywt/internal/handlers/api/weekly_status.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/handlers/bot/handler.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp1pn4w2nj/tmpmogd3ywt/internal/handlers/bot/handler.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/handlers/bot/textcommand/bind.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp1pn4w2nj/tmpmogd3ywt/internal/handlers/bot/textcommand/bind.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/handlers/bot/textcommand/text_command.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp1pn4w2nj/tmpmogd3ywt/internal/handlers/bot/textcommand/text_command.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/repositories/db.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp1pn4w2nj/tmpmogd3ywt/internal/repositories/db.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/repositories/repository.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp1pn4w2nj/tmpmogd3ywt/internal/repositories/repository.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/router/router.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp1pn4w2nj/tmpmogd3ywt/internal/router/router.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/services/event/service.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp1pn4w2nj/tmpmogd3ywt/internal/services/event/service.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/services/googlechat/daily_status.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp1pn4w2nj/tmpmogd3ywt/internal/services/googlechat/daily_status.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/services/googlechat/messenger.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp1pn4w2nj/tmpmogd3ywt/internal/services/googlechat/messenger.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/services/googlechat/service.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp1pn4w2nj/tmpmogd3ywt/internal/services/googlechat/service.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/services/googlechat/weekly_plan.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp1pn4w2nj/tmpmogd3ywt/internal/services/googlechat/weekly_plan.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/services/services.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp1pn4w2nj/tmpmogd3ywt/internal/services/services.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/services/user/service.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp1pn4w2nj/tmpmogd3ywt/internal/services/user/service.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/logging/logging.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp1pn4w2nj/tmpmogd3ywt/logging/logging.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/server/server.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp1pn4w2nj/tmpmogd3ywt/server/server.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/util/oauth_client.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp1pn4w2nj/tmpmogd3ywt/util/oauth_client.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/util/working_days.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp1pn4w2nj/tmpmogd3ywt/util/working_days.go
+--------------------------------------------------------------------------------
+
+2025-01-28 11:18:06,679 DEBUG    root            API endpoint: [https://appengine.googleapis.com/], API version: [v1]
+2025-01-28 11:18:07,260 DEBUG    root            (gcloud.app.deploy) Permissions error fetching application [apps/cv-building-go-dev]. Please make sure that you have permission to view applications on the project and that aliaksandr.rutkouski@innowise.com has the App Engine Deployer (roles/appengine.deployer) role.
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/493.0.0/google-cloud-sdk/lib/googlecloudsdk/command_lib/app/deploy_util.py", line 818, in _PossiblyCreateApp
+    return api_client.GetApplication()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/493.0.0/google-cloud-sdk/lib/googlecloudsdk/api_lib/app/appengine_api_client.py", line 77, in GetApplication
+    return self.client.apps.Get(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/493.0.0/google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/appengine/v1/appengine_v1_client.py", line 1217, in Get
+    return self._RunMethod(
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/493.0.0/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 747, in _RunMethod
+    return self.ProcessHttpResponse(method_config, http_response, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/493.0.0/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 753, in ProcessHttpResponse
+    self.__ProcessHttpResponse(method_config, http_response, request))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/493.0.0/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 612, in __ProcessHttpResponse
+    raise exceptions.HttpError.FromResponse(
+apitools.base.py.exceptions.HttpForbiddenError: HttpError accessing <https://appengine.googleapis.com/v1/apps/cv-building-go-dev?alt=json>: response: <{'vary': 'Origin, X-Origin, Referer', 'content-type': 'application/json; charset=UTF-8', 'date': 'Tue, 28 Jan 2025 08:18:07 GMT', 'server': 'ESF', 'x-xss-protection': '0', 'x-frame-options': 'SAMEORIGIN', 'x-content-type-options': 'nosniff', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked', 'status': '403', 'content-length': '655', '-content-encoding': 'gzip'}>, content <{
+  "error": {
+    "code": 403,
+    "message": "Permission 'appengine.applications.get' denied on resource '//appengine.googleapis.com/projects/cv-building-go-dev/locations/global/applications/cv-building-go-dev' (or it may not exist).",
+    "status": "PERMISSION_DENIED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "IAM_PERMISSION_DENIED",
+        "domain": "appengine.googleapis.com",
+        "metadata": {
+          "resource": "projects/cv-building-go-dev/locations/global/applications/cv-building-go-dev",
+          "permission": "appengine.applications.get"
+        }
+      }
+    ]
+  }
+}
+>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/493.0.0/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 998, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/493.0.0/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 934, in Run
+    resources = command_instance.Run(args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/493.0.0/google-cloud-sdk/lib/surface/app/deploy.py", line 122, in Run
+    return deploy_util.RunDeploy(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/493.0.0/google-cloud-sdk/lib/googlecloudsdk/command_lib/app/deploy_util.py", line 638, in RunDeploy
+    app = _PossiblyCreateApp(api_client, project)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/493.0.0/google-cloud-sdk/lib/googlecloudsdk/command_lib/app/deploy_util.py", line 838, in _PossiblyCreateApp
+    raise core_api_exceptions.HttpException(
+googlecloudsdk.api_lib.util.exceptions.HttpException: Permissions error fetching application [apps/cv-building-go-dev]. Please make sure that you have permission to view applications on the project and that aliaksandr.rutkouski@innowise.com has the App Engine Deployer (roles/appengine.deployer) role.
+2025-01-28 11:18:07,266 ERROR    root            (gcloud.app.deploy) Permissions error fetching application [apps/cv-building-go-dev]. Please make sure that you have permission to view applications on the project and that aliaksandr.rutkouski@innowise.com has the App Engine Deployer (roles/appengine.deployer) role.

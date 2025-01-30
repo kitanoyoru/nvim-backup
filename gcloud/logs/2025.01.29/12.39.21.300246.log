@@ -1,0 +1,8 @@
+2025-01-29 12:39:21,301 DEBUG    root            Loaded Command Group: ['gcloud', 'app']
+2025-01-29 12:39:21,393 DEBUG    root            Loaded Command Group: ['gcloud', 'app', 'deploy']
+2025-01-29 12:39:21,394 DEBUG    root            Running [gcloud.app.deploy] with arguments: []
+2025-01-29 12:39:27,530 INFO     ___FILE_ONLY___ 
+
+Command killed by keyboard interrupt
+
+

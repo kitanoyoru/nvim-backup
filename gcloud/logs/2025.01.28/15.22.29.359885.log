@@ -1,0 +1,275 @@
+2025-01-28 15:22:29,360 DEBUG    root            Loaded Command Group: ['gcloud', 'app']
+2025-01-28 15:22:29,462 DEBUG    root            Loaded Command Group: ['gcloud', 'app', 'deploy']
+2025-01-28 15:22:29,463 DEBUG    root            Running [gcloud.app.deploy] with arguments: []
+2025-01-28 15:22:29,576 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2025-01-28 15:22:29,582 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2025-01-28 15:22:29,709 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2025-01-28 15:22:29,722 DEBUG    root            Loading runtimes experiment config from [gs://runtime-builders/experiments.yaml]
+2025-01-28 15:22:29,736 INFO     root            Reading [<googlecloudsdk.api_lib.storage.storage_util.ObjectReference object at 0x106c4ad90>]
+2025-01-28 15:22:29,971 DEBUG    root            Flex image build option: FlexImageBuildOptions.ON_SERVER
+2025-01-28 15:22:29,982 INFO     root            Executing staging command: [/opt/homebrew/share/google-cloud-sdk/platform/google_appengine/go-app-stager /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/app.yaml /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb]
+
+
+2025-01-28 15:22:29,982 DEBUG    root            Executing command: ['/opt/homebrew/share/google-cloud-sdk/platform/google_appengine/go-app-stager', '/Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/app.yaml', '/Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot', '/var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb']
+2025-01-28 15:22:30,026 INFO     root            ------------------------------------ STDOUT ------------------------------------
+building with dependencies from go.mod
+------------------------------------ STDERR ------------------------------------
+2025/01/28 15:22:30 staging for go1.21
+main-package: .
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/.gcloudignore to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/.gcloudignore
+skipping /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/.git
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/.gitignore to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/.gitignore
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/README.md to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/README.md
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/app.yaml to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/app.yaml
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/assets/forms/daily_status.json to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/assets/forms/daily_status.json
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/cmd/main.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/cmd/main.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/config/config.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/config/config.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/config/config.yaml to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/config/config.yaml
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/db/migrations/20250120091611_initial_schema.sql to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/db/migrations/20250120091611_initial_schema.sql
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/go.mod to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/go.mod
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/go.sum to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/go.sum
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/handlers/api/daily_status.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/internal/handlers/api/daily_status.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/handlers/api/handler.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/internal/handlers/api/handler.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/handlers/api/weekly_status.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/internal/handlers/api/weekly_status.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/handlers/bot/handler.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/internal/handlers/bot/handler.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/handlers/bot/textcommand/bind.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/internal/handlers/bot/textcommand/bind.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/handlers/bot/textcommand/text_command.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/internal/handlers/bot/textcommand/text_command.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/repositories/daily_statuses.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/internal/repositories/daily_statuses.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/repositories/db.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/internal/repositories/db.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/repositories/projects.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/internal/repositories/projects.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/repositories/repository.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/internal/repositories/repository.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/repositories/user.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/internal/repositories/user.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/repositories/weekly_plans.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/internal/repositories/weekly_plans.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/router/router.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/internal/router/router.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/services/event/service.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/internal/services/event/service.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/services/googlechat/daily_status.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/internal/services/googlechat/daily_status.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/services/googlechat/messenger.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/internal/services/googlechat/messenger.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/services/googlechat/service.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/internal/services/googlechat/service.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/services/googlechat/weekly_plan.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/internal/services/googlechat/weekly_plan.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/services/project/project.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/internal/services/project/project.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/services/project/service.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/internal/services/project/service.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/services/services.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/internal/services/services.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/services/user/service.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/internal/services/user/service.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/logging/logging.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/logging/logging.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/server/server.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/server/server.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/util/oauth_client.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/util/oauth_client.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/util/working_days.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/util/working_days.go
+--------------------------------------------------------------------------------
+
+2025-01-28 15:22:30,027 DEBUG    root            API endpoint: [https://appengine.googleapis.com/], API version: [v1]
+2025-01-28 15:22:30,323 INFO     ___FILE_ONLY___ Services to deploy:
+
+
+2025-01-28 15:22:30,324 INFO     ___FILE_ONLY___ descriptor:                  [/Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/app.yaml]
+source:                      [/Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot]
+target project:              [cv-building-go]
+target service:              [default]
+target version:              [20250128t152230]
+target url:                  [https://cv-building-go.lm.r.appspot.com]
+target service account:      [cv-stat-bot-service-account@cv-building-go.iam.gserviceaccount.com]
+
+
+
+2025-01-28 15:22:32,997 DEBUG    root            No bucket specified, retrieving default bucket.
+2025-01-28 15:22:33,000 DEBUG    root            Using bucket [gs://staging.cv-building-go.appspot.com].
+2025-01-28 15:22:33,175 INFO     ___FILE_ONLY___ Beginning deployment of service [default]...
+
+2025-01-28 15:22:33,177 INFO     root            Using ignore file at [/Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/.gcloudignore].
+2025-01-28 15:22:33,178 DEBUG    root            Skipping file [.gitignore]
+2025-01-28 15:22:33,178 DEBUG    root            Skipping file [.gcloudignore]
+2025-01-28 15:22:33,203 DEBUG    root            Could not call git with args ('config', '--get-regexp', 'remote\\.(.*)\\.url'): Command '['git', 'config', '--get-regexp', 'remote\\.(.*)\\.url']' returned non-zero exit status 1.
+2025-01-28 15:22:33,204 INFO     root            Could not find any remote repositories associated with [/var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb]. Cloud diagnostic tools may not be able to display the correct source code for this deployment.
+2025-01-28 15:22:33,687 DEBUG    root            Skipping upload of [app.yaml]
+2025-01-28 15:22:33,687 INFO     root            Incremental upload skipped 100.0% of data
+2025-01-28 15:22:33,688 DEBUG    root            Skipping upload of [go.mod]
+2025-01-28 15:22:33,688 INFO     root            Incremental upload skipped 100.0% of data
+2025-01-28 15:22:33,688 DEBUG    root            Skipping upload of [go.sum]
+2025-01-28 15:22:33,688 INFO     root            Incremental upload skipped 100.0% of data
+2025-01-28 15:22:33,688 DEBUG    root            Skipping upload of [README.md]
+2025-01-28 15:22:33,688 INFO     root            Incremental upload skipped 100.0% of data
+2025-01-28 15:22:33,688 DEBUG    root            Skipping upload of [_main-package-path]
+2025-01-28 15:22:33,688 INFO     root            Incremental upload skipped 100.0% of data
+2025-01-28 15:22:33,688 INFO     root            Incremental upload skipped 87.66% of data
+2025-01-28 15:22:33,688 DEBUG    root            Skipping upload of [util/oauth_client.go]
+2025-01-28 15:22:33,688 INFO     root            Incremental upload skipped 87.94% of data
+2025-01-28 15:22:33,688 DEBUG    root            Skipping upload of [util/working_days.go]
+2025-01-28 15:22:33,688 INFO     root            Incremental upload skipped 88.09% of data
+2025-01-28 15:22:33,688 DEBUG    root            Skipping upload of [config/config.go]
+2025-01-28 15:22:33,688 INFO     root            Incremental upload skipped 88.83% of data
+2025-01-28 15:22:33,688 DEBUG    root            Skipping upload of [config/config.yaml]
+2025-01-28 15:22:33,688 INFO     root            Incremental upload skipped 88.93% of data
+2025-01-28 15:22:33,688 INFO     root            Incremental upload skipped 88.86% of data
+2025-01-28 15:22:33,688 DEBUG    root            Skipping upload of [internal/repositories/db.go]
+2025-01-28 15:22:33,688 INFO     root            Incremental upload skipped 89.09% of data
+2025-01-28 15:22:33,688 INFO     root            Incremental upload skipped 89.02% of data
+2025-01-28 15:22:33,688 INFO     root            Incremental upload skipped 88.95% of data
+2025-01-28 15:22:33,688 DEBUG    root            Skipping upload of [internal/repositories/repository.go]
+2025-01-28 15:22:33,688 INFO     root            Incremental upload skipped 89.09% of data
+2025-01-28 15:22:33,688 INFO     root            Incremental upload skipped 88.2% of data
+2025-01-28 15:22:33,689 INFO     root            Incremental upload skipped 85.29% of data
+2025-01-28 15:22:33,689 INFO     root            Incremental upload skipped 82.07% of data
+2025-01-28 15:22:33,689 INFO     root            Incremental upload skipped 77.92% of data
+2025-01-28 15:22:33,689 DEBUG    root            Skipping upload of [internal/handlers/bot/handler.go]
+2025-01-28 15:22:33,689 INFO     root            Incremental upload skipped 79.24% of data
+2025-01-28 15:22:33,689 DEBUG    root            Skipping upload of [internal/handlers/bot/textcommand/bind.go]
+2025-01-28 15:22:33,689 INFO     root            Incremental upload skipped 80.67% of data
+2025-01-28 15:22:33,689 DEBUG    root            Skipping upload of [internal/handlers/bot/textcommand/text_command.go]
+2025-01-28 15:22:33,689 INFO     root            Incremental upload skipped 81.9% of data
+2025-01-28 15:22:33,689 INFO     root            Incremental upload skipped 80.05% of data
+2025-01-28 15:22:33,689 DEBUG    root            Skipping upload of [internal/services/user/service.go]
+2025-01-28 15:22:33,689 INFO     root            Incremental upload skipped 80.16% of data
+2025-01-28 15:22:33,689 INFO     root            Incremental upload skipped 79.72% of data
+2025-01-28 15:22:33,689 INFO     root            Incremental upload skipped 78.68% of data
+2025-01-28 15:22:33,689 DEBUG    root            Skipping upload of [internal/services/googlechat/service.go]
+2025-01-28 15:22:33,689 INFO     root            Incremental upload skipped 78.78% of data
+2025-01-28 15:22:33,689 INFO     root            Incremental upload skipped 72.57% of data
+2025-01-28 15:22:33,689 DEBUG    root            Skipping upload of [internal/services/googlechat/messenger.go]
+2025-01-28 15:22:33,689 INFO     root            Incremental upload skipped 73.59% of data
+2025-01-28 15:22:33,689 INFO     root            Incremental upload skipped 72.71% of data
+2025-01-28 15:22:33,689 DEBUG    root            Skipping upload of [internal/services/event/service.go]
+2025-01-28 15:22:33,689 INFO     root            Incremental upload skipped 72.96% of data
+2025-01-28 15:22:33,689 INFO     root            Incremental upload skipped 71.07% of data
+2025-01-28 15:22:33,689 DEBUG    root            Skipping upload of [server/server.go]
+2025-01-28 15:22:33,689 INFO     root            Incremental upload skipped 71.48% of data
+2025-01-28 15:22:33,689 DEBUG    root            Skipping upload of [db/migrations/20250120091611_initial_schema.sql]
+2025-01-28 15:22:33,689 INFO     root            Incremental upload skipped 72.55% of data
+2025-01-28 15:22:33,689 DEBUG    root            Skipping upload of [assets/forms/daily_status.json]
+2025-01-28 15:22:33,689 INFO     root            Incremental upload skipped 73.81% of data
+2025-01-28 15:22:33,689 DEBUG    root            Skipping upload of [logging/logging.go]
+2025-01-28 15:22:33,689 INFO     root            Incremental upload skipped 75.77% of data
+2025-01-28 15:22:33,689 DEBUG    root            Uploading 12 files to Google Cloud Storage
+2025-01-28 15:22:33,689 DEBUG    root            Using [16] threads
+2025-01-28 15:22:33,690 INFO     ___FILE_ONLY___ ╔════════════════════════════════════════════════════════════╗
+
+2025-01-28 15:22:33,690 INFO     ___FILE_ONLY___ ╠═ Uploading 12 files to Google Cloud Storage               ═╣
+
+2025-01-28 15:22:33,690 INFO     ___FILE_ONLY___ ╚
+2025-01-28 15:22:33,732 INFO     root            Uploading [/var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/internal/services/services.go] to [staging.cv-building-go.appspot.com/23e12e3af1793f6079b180210d70e8ec7b7f4984]
+2025-01-28 15:22:33,734 INFO     root            Uploading [/var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/internal/services/project/service.go] to [staging.cv-building-go.appspot.com/36551e5494b3856c5b8186223183729b471a7e5b]
+2025-01-28 15:22:33,734 INFO     root            Uploading [/var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/internal/handlers/api/weekly_status.go] to [staging.cv-building-go.appspot.com/cc0b83a8ad17beb0f735d3f665fa9946270d09cc]
+2025-01-28 15:22:33,736 INFO     root            Uploading [/var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/internal/services/project/project.go] to [staging.cv-building-go.appspot.com/7cd80cfc18577c138427e672004afe6fab95fbed]
+2025-01-28 15:22:33,737 INFO     root            Uploading [/var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/internal/repositories/projects.go] to [staging.cv-building-go.appspot.com/f872f992849c54d86f1ccaa71cf3e68c3282db77]
+2025-01-28 15:22:33,737 INFO     root            Uploading [/var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/internal/services/googlechat/weekly_plan.go] to [staging.cv-building-go.appspot.com/65e3255a99a7bcbe8d29077a0a73e0d753e193aa]
+2025-01-28 15:22:33,737 INFO     root            Uploading [/var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/cmd/main.go] to [staging.cv-building-go.appspot.com/04929bf84360da78556a5edc35beac70b1f6529f]
+2025-01-28 15:22:33,739 INFO     root            Uploading [/var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/internal/repositories/daily_statuses.go] to [staging.cv-building-go.appspot.com/de0c2e537d5eccb45118cd4eb4436c317aae75a9]
+2025-01-28 15:22:33,739 INFO     root            Uploading [/var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/internal/services/googlechat/daily_status.go] to [staging.cv-building-go.appspot.com/4dfdbc19c86d823edc1fa6bf1448b9a38bca009a]
+2025-01-28 15:22:33,739 INFO     root            Uploading [/var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/internal/handlers/api/handler.go] to [staging.cv-building-go.appspot.com/85c0853de68803fb71952ab591e5c41773cbbe03]
+2025-01-28 15:22:33,739 INFO     root            Uploading [/var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/internal/handlers/api/daily_status.go] to [staging.cv-building-go.appspot.com/a2187d178ac25f8172515e5fe50c7618ba1e8587]
+2025-01-28 15:22:33,743 INFO     root            Uploading [/var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmp6tmhuwzf/tmp4phzuuqb/internal/router/router.go] to [staging.cv-building-go.appspot.com/7832a596fd791de812462ad9801d6e8af4953fd1]
+2025-01-28 15:22:33,953 INFO     ___FILE_ONLY___ ═════
+2025-01-28 15:22:33,955 INFO     ___FILE_ONLY___ ═════
+2025-01-28 15:22:33,956 INFO     ___FILE_ONLY___ ═════
+2025-01-28 15:22:33,960 INFO     ___FILE_ONLY___ ═════
+2025-01-28 15:22:33,960 INFO     ___FILE_ONLY___ ═════
+2025-01-28 15:22:33,961 INFO     ___FILE_ONLY___ ═════
+2025-01-28 15:22:33,965 INFO     ___FILE_ONLY___ ═════
+2025-01-28 15:22:33,967 INFO     ___FILE_ONLY___ ═════
+2025-01-28 15:22:33,967 INFO     ___FILE_ONLY___ ═════
+2025-01-28 15:22:33,967 INFO     ___FILE_ONLY___ ═════
+2025-01-28 15:22:33,974 INFO     ___FILE_ONLY___ ═════
+2025-01-28 15:22:33,975 INFO     ___FILE_ONLY___ ═════
+2025-01-28 15:22:33,975 INFO     ___FILE_ONLY___ ╝
+
+2025-01-28 15:22:33,983 INFO     ___FILE_ONLY___ File upload done.
+
+2025-01-28 15:22:33,983 INFO     root            Manifest: [{'app.yaml': {'sourceUrl': 'https://storage.googleapis.com/staging.cv-building-go.appspot.com/558420380218b75ea8f37041da171882f8ddfa4b', 'sha1Sum': '558420380218b75ea8f37041da171882f8ddfa4b'}, 'go.mod': {'sourceUrl': 'https://storage.googleapis.com/staging.cv-building-go.appspot.com/c62836067de403c5df576239b5fa0845b36d8a9c', 'sha1Sum': 'c62836067de403c5df576239b5fa0845b36d8a9c'}, 'go.sum': {'sourceUrl': 'https://storage.googleapis.com/staging.cv-building-go.appspot.com/9c05fe906dde3573906930006ad49df5377cee5e', 'sha1Sum': '9c05fe906dde3573906930006ad49df5377cee5e'}, 'README.md': {'sourceUrl': 'https://storage.googleapis.com/staging.cv-building-go.appspot.com/8e1f41cb2cfd5365a7e70d037692e05d6d02fb99', 'sha1Sum': '8e1f41cb2cfd5365a7e70d037692e05d6d02fb99'}, '_main-package-path': {'sourceUrl': 'https://storage.googleapis.com/staging.cv-building-go.appspot.com/3a52ce780950d4d969792a2559cd519d7ee8c727', 'sha1Sum': '3a52ce780950d4d969792a2559cd519d7ee8c727'}, 'cmd/main.go': {'sourceUrl': 'https://storage.googleapis.com/staging.cv-building-go.appspot.com/04929bf84360da78556a5edc35beac70b1f6529f', 'sha1Sum': '04929bf84360da78556a5edc35beac70b1f6529f'}, 'util/oauth_client.go': {'sourceUrl': 'https://storage.googleapis.com/staging.cv-building-go.appspot.com/18de62ddb264fca68338aa7802afe237bfcb0a31', 'sha1Sum': '18de62ddb264fca68338aa7802afe237bfcb0a31'}, 'util/working_days.go': {'sourceUrl': 'https://storage.googleapis.com/staging.cv-building-go.appspot.com/9e9443a63015da129aca21a767fb9e32ccfedf48', 'sha1Sum': '9e9443a63015da129aca21a767fb9e32ccfedf48'}, 'config/config.go': {'sourceUrl': 'https://storage.googleapis.com/staging.cv-building-go.appspot.com/8122461377f49013a76de615645c38bdaf3b3e63', 'sha1Sum': '8122461377f49013a76de615645c38bdaf3b3e63'}, 'config/config.yaml': {'sourceUrl': 'https://storage.googleapis.com/staging.cv-building-go.appspot.com/f0225e7551b6f930dc98c647077e0ce04cfc2f75', 'sha1Sum': 'f0225e7551b6f930dc98c647077e0ce04cfc2f75'}, 'internal/repositories/user.go': {'sourceUrl': 'https://storage.googleapis.com/staging.cv-building-go.appspot.com/de0c2e537d5eccb45118cd4eb4436c317aae75a9', 'sha1Sum': 'de0c2e537d5eccb45118cd4eb4436c317aae75a9'}, 'internal/repositories/db.go': {'sourceUrl': 'https://storage.googleapis.com/staging.cv-building-go.appspot.com/cc75b38f9fdafa85eebfc63738d9dad8bb452ab2', 'sha1Sum': 'cc75b38f9fdafa85eebfc63738d9dad8bb452ab2'}, 'internal/repositories/weekly_plans.go': {'sourceUrl': 'https://storage.googleapis.com/staging.cv-building-go.appspot.com/de0c2e537d5eccb45118cd4eb4436c317aae75a9', 'sha1Sum': 'de0c2e537d5eccb45118cd4eb4436c317aae75a9'}, 'internal/repositories/daily_statuses.go': {'sourceUrl': 'https://storage.googleapis.com/staging.cv-building-go.appspot.com/de0c2e537d5eccb45118cd4eb4436c317aae75a9', 'sha1Sum': 'de0c2e537d5eccb45118cd4eb4436c317aae75a9'}, 'internal/repositories/repository.go': {'sourceUrl': 'https://storage.googleapis.com/staging.cv-building-go.appspot.com/d238b5829616ae4442506d01d0553cca4eea99e4', 'sha1Sum': 'd238b5829616ae4442506d01d0553cca4eea99e4'}, 'internal/repositories/projects.go': {'sourceUrl': 'https://storage.googleapis.com/staging.cv-building-go.appspot.com/f872f992849c54d86f1ccaa71cf3e68c3282db77', 'sha1Sum': 'f872f992849c54d86f1ccaa71cf3e68c3282db77'}, 'internal/handlers/api/handler.go': {'sourceUrl': 'https://storage.googleapis.com/staging.cv-building-go.appspot.com/85c0853de68803fb71952ab591e5c41773cbbe03', 'sha1Sum': '85c0853de68803fb71952ab591e5c41773cbbe03'}, 'internal/handlers/api/daily_status.go': {'sourceUrl': 'https://storage.googleapis.com/staging.cv-building-go.appspot.com/a2187d178ac25f8172515e5fe50c7618ba1e8587', 'sha1Sum': 'a2187d178ac25f8172515e5fe50c7618ba1e8587'}, 'internal/handlers/api/weekly_status.go': {'sourceUrl': 'https://storage.googleapis.com/staging.cv-building-go.appspot.com/cc0b83a8ad17beb0f735d3f665fa9946270d09cc', 'sha1Sum': 'cc0b83a8ad17beb0f735d3f665fa9946270d09cc'}, 'internal/handlers/bot/handler.go': {'sourceUrl': 'https://storage.googleapis.com/staging.cv-building-go.appspot.com/a3b9cf39d78edca4cfb53387ef74d05fb3205f58', 'sha1Sum': 'a3b9cf39d78edca4cfb53387ef74d05fb3205f58'}, 'internal/handlers/bot/textcommand/bind.go': {'sourceUrl': 'https://storage.googleapis.com/staging.cv-building-go.appspot.com/9592d1dde1c9f927ee9e2504b63e35fa4d75375e', 'sha1Sum': '9592d1dde1c9f927ee9e2504b63e35fa4d75375e'}, 'internal/handlers/bot/textcommand/text_command.go': {'sourceUrl': 'https://storage.googleapis.com/staging.cv-building-go.appspot.com/5d1c14da1178a52ddc4e8043e6bf449c0aed37f3', 'sha1Sum': '5d1c14da1178a52ddc4e8043e6bf449c0aed37f3'}, 'internal/services/services.go': {'sourceUrl': 'https://storage.googleapis.com/staging.cv-building-go.appspot.com/23e12e3af1793f6079b180210d70e8ec7b7f4984', 'sha1Sum': '23e12e3af1793f6079b180210d70e8ec7b7f4984'}, 'internal/services/user/service.go': {'sourceUrl': 'https://storage.googleapis.com/staging.cv-building-go.appspot.com/fa69df816bdbb143be24b112b289905599be0c59', 'sha1Sum': 'fa69df816bdbb143be24b112b289905599be0c59'}, 'internal/services/project/service.go': {'sourceUrl': 'https://storage.googleapis.com/staging.cv-building-go.appspot.com/36551e5494b3856c5b8186223183729b471a7e5b', 'sha1Sum': '36551e5494b3856c5b8186223183729b471a7e5b'}, 'internal/services/project/project.go': {'sourceUrl': 'https://storage.googleapis.com/staging.cv-building-go.appspot.com/7cd80cfc18577c138427e672004afe6fab95fbed', 'sha1Sum': '7cd80cfc18577c138427e672004afe6fab95fbed'}, 'internal/services/googlechat/service.go': {'sourceUrl': 'https://storage.googleapis.com/staging.cv-building-go.appspot.com/d635763a1a70fa3723bb7a25ddffafca532676dc', 'sha1Sum': 'd635763a1a70fa3723bb7a25ddffafca532676dc'}, 'internal/services/googlechat/daily_status.go': {'sourceUrl': 'https://storage.googleapis.com/staging.cv-building-go.appspot.com/4dfdbc19c86d823edc1fa6bf1448b9a38bca009a', 'sha1Sum': '4dfdbc19c86d823edc1fa6bf1448b9a38bca009a'}, 'internal/services/googlechat/messenger.go': {'sourceUrl': 'https://storage.googleapis.com/staging.cv-building-go.appspot.com/42196219ae292ca3f2b4adc6223afefd891f8585', 'sha1Sum': '42196219ae292ca3f2b4adc6223afefd891f8585'}, 'internal/services/googlechat/weekly_plan.go': {'sourceUrl': 'https://storage.googleapis.com/staging.cv-building-go.appspot.com/65e3255a99a7bcbe8d29077a0a73e0d753e193aa', 'sha1Sum': '65e3255a99a7bcbe8d29077a0a73e0d753e193aa'}, 'internal/services/event/service.go': {'sourceUrl': 'https://storage.googleapis.com/staging.cv-building-go.appspot.com/74cea356c60888895870dc2dc185a3183fead058', 'sha1Sum': '74cea356c60888895870dc2dc185a3183fead058'}, 'internal/router/router.go': {'sourceUrl': 'https://storage.googleapis.com/staging.cv-building-go.appspot.com/7832a596fd791de812462ad9801d6e8af4953fd1', 'sha1Sum': '7832a596fd791de812462ad9801d6e8af4953fd1'}, 'server/server.go': {'sourceUrl': 'https://storage.googleapis.com/staging.cv-building-go.appspot.com/bd153cce344fb41e8fe4584791a86b4bc6dac71a', 'sha1Sum': 'bd153cce344fb41e8fe4584791a86b4bc6dac71a'}, 'db/migrations/20250120091611_initial_schema.sql': {'sourceUrl': 'https://storage.googleapis.com/staging.cv-building-go.appspot.com/95f87c5dec74d52fbf86d9d2b0269197ac259250', 'sha1Sum': '95f87c5dec74d52fbf86d9d2b0269197ac259250'}, 'assets/forms/daily_status.json': {'sourceUrl': 'https://storage.googleapis.com/staging.cv-building-go.appspot.com/8041e3a1b757c870151aeea8058074f32c6586d1', 'sha1Sum': '8041e3a1b757c870151aeea8058074f32c6586d1'}, 'logging/logging.go': {'sourceUrl': 'https://storage.googleapis.com/staging.cv-building-go.appspot.com/c4957fb5e5aaa3a26f8294b24edaf53ac88771c8', 'sha1Sum': 'c4957fb5e5aaa3a26f8294b24edaf53ac88771c8'}}]
+2025-01-28 15:22:33,984 DEBUG    root            Converted YAML to JSON: "{
+  "entrypoint": {
+    "shell": ""
+  },
+  "instanceClass": "F1",
+  "runtime": "go121",
+  "runtimeMainExecutablePath": "./cmd"
+}"
+2025-01-28 15:22:34,345 DEBUG    root            Operation [apps/cv-building-go/operations/703784c4-3261-48fb-aa38-777e06dbaaee] not complete. Waiting to retry.
+2025-01-28 15:22:34,345 INFO     ___FILE_ONLY___ Updating service [default]...
+2025-01-28 15:22:35,526 DEBUG    root            Operation [apps/cv-building-go/operations/703784c4-3261-48fb-aa38-777e06dbaaee] not complete. Waiting to retry.
+2025-01-28 15:22:40,955 DEBUG    root            Operation [apps/cv-building-go/operations/703784c4-3261-48fb-aa38-777e06dbaaee] not complete. Waiting to retry.
+2025-01-28 15:22:46,488 DEBUG    root            Operation [apps/cv-building-go/operations/703784c4-3261-48fb-aa38-777e06dbaaee] not complete. Waiting to retry.
+2025-01-28 15:22:52,024 DEBUG    root            Operation [apps/cv-building-go/operations/703784c4-3261-48fb-aa38-777e06dbaaee] not complete. Waiting to retry.
+2025-01-28 15:22:57,225 DEBUG    root            Operation [apps/cv-building-go/operations/703784c4-3261-48fb-aa38-777e06dbaaee] not complete. Waiting to retry.
+2025-01-28 15:23:02,807 DEBUG    root            Operation [apps/cv-building-go/operations/703784c4-3261-48fb-aa38-777e06dbaaee] not complete. Waiting to retry.
+2025-01-28 15:23:08,627 DEBUG    root            Operation [apps/cv-building-go/operations/703784c4-3261-48fb-aa38-777e06dbaaee] not complete. Waiting to retry.
+2025-01-28 15:23:13,981 DEBUG    root            Operation [apps/cv-building-go/operations/703784c4-3261-48fb-aa38-777e06dbaaee] not complete. Waiting to retry.
+2025-01-28 15:23:19,234 DEBUG    root            Operation [apps/cv-building-go/operations/703784c4-3261-48fb-aa38-777e06dbaaee] not complete. Waiting to retry.
+2025-01-28 15:23:25,213 DEBUG    root            Operation [apps/cv-building-go/operations/703784c4-3261-48fb-aa38-777e06dbaaee] not complete. Waiting to retry.
+2025-01-28 15:23:30,778 DEBUG    root            Operation [apps/cv-building-go/operations/703784c4-3261-48fb-aa38-777e06dbaaee] not complete. Waiting to retry.
+2025-01-28 15:23:36,019 DEBUG    root            Operation [apps/cv-building-go/operations/703784c4-3261-48fb-aa38-777e06dbaaee] not complete. Waiting to retry.
+2025-01-28 15:23:41,886 DEBUG    root            Operation [apps/cv-building-go/operations/703784c4-3261-48fb-aa38-777e06dbaaee] not complete. Waiting to retry.
+2025-01-28 15:23:47,602 DEBUG    root            Operation [apps/cv-building-go/operations/703784c4-3261-48fb-aa38-777e06dbaaee] not complete. Waiting to retry.
+2025-01-28 15:23:53,515 DEBUG    root            Operation [apps/cv-building-go/operations/703784c4-3261-48fb-aa38-777e06dbaaee] not complete. Waiting to retry.
+2025-01-28 15:23:58,910 DEBUG    root            Operation [apps/cv-building-go/operations/703784c4-3261-48fb-aa38-777e06dbaaee] not complete. Waiting to retry.
+2025-01-28 15:24:05,129 DEBUG    root            Operation [apps/cv-building-go/operations/703784c4-3261-48fb-aa38-777e06dbaaee] not complete. Waiting to retry.
+2025-01-28 15:24:10,373 DEBUG    root            Operation [apps/cv-building-go/operations/703784c4-3261-48fb-aa38-777e06dbaaee] not complete. Waiting to retry.
+2025-01-28 15:24:15,836 DEBUG    root            Operation [apps/cv-building-go/operations/703784c4-3261-48fb-aa38-777e06dbaaee] not complete. Waiting to retry.
+2025-01-28 15:24:21,896 DEBUG    root            Operation [apps/cv-building-go/operations/703784c4-3261-48fb-aa38-777e06dbaaee] not complete. Waiting to retry.
+2025-01-28 15:24:27,983 DEBUG    root            Operation [apps/cv-building-go/operations/703784c4-3261-48fb-aa38-777e06dbaaee] not complete. Waiting to retry.
+2025-01-28 15:24:33,287 DEBUG    root            Operation [apps/cv-building-go/operations/703784c4-3261-48fb-aa38-777e06dbaaee] not complete. Waiting to retry.
+2025-01-28 15:24:38,772 DEBUG    root            Operation [apps/cv-building-go/operations/703784c4-3261-48fb-aa38-777e06dbaaee] not complete. Waiting to retry.
+2025-01-28 15:24:44,719 DEBUG    root            Operation [apps/cv-building-go/operations/703784c4-3261-48fb-aa38-777e06dbaaee] not complete. Waiting to retry.
+2025-01-28 15:24:50,343 DEBUG    root            Operation [apps/cv-building-go/operations/703784c4-3261-48fb-aa38-777e06dbaaee] not complete. Waiting to retry.
+2025-01-28 15:24:55,855 DEBUG    root            Operation [apps/cv-building-go/operations/703784c4-3261-48fb-aa38-777e06dbaaee] not complete. Waiting to retry.
+2025-01-28 15:25:01,694 DEBUG    root            Operation [apps/cv-building-go/operations/703784c4-3261-48fb-aa38-777e06dbaaee] not complete. Waiting to retry.
+2025-01-28 15:25:07,196 DEBUG    root            Operation [apps/cv-building-go/operations/703784c4-3261-48fb-aa38-777e06dbaaee] not complete. Waiting to retry.
+2025-01-28 15:25:12,756 DEBUG    root            Operation [apps/cv-building-go/operations/703784c4-3261-48fb-aa38-777e06dbaaee] not complete. Waiting to retry.
+2025-01-28 15:25:18,426 DEBUG    root            Operation [apps/cv-building-go/operations/703784c4-3261-48fb-aa38-777e06dbaaee] not complete. Waiting to retry.
+2025-01-28 15:25:24,117 DEBUG    root            Operation [apps/cv-building-go/operations/703784c4-3261-48fb-aa38-777e06dbaaee] not complete. Waiting to retry.
+2025-01-28 15:25:29,805 DEBUG    root            Operation [apps/cv-building-go/operations/703784c4-3261-48fb-aa38-777e06dbaaee] not complete. Waiting to retry.
+2025-01-28 15:25:35,775 DEBUG    root            Operation [apps/cv-building-go/operations/703784c4-3261-48fb-aa38-777e06dbaaee] not complete. Waiting to retry.
+2025-01-28 15:25:41,769 DEBUG    root            Operation [apps/cv-building-go/operations/703784c4-3261-48fb-aa38-777e06dbaaee] not complete. Waiting to retry.
+2025-01-28 15:25:47,393 DEBUG    root            Operation [apps/cv-building-go/operations/703784c4-3261-48fb-aa38-777e06dbaaee] not complete. Waiting to retry.
+2025-01-28 15:25:52,724 DEBUG    root            Operation [apps/cv-building-go/operations/703784c4-3261-48fb-aa38-777e06dbaaee] not complete. Waiting to retry.
+2025-01-28 15:25:58,687 DEBUG    root            Operation [apps/cv-building-go/operations/703784c4-3261-48fb-aa38-777e06dbaaee] complete. Result: {
+    "done": true,
+    "error": {
+        "code": 7,
+        "message": "failed to fetch metadata: generic::permission_denied: failed to fetch metadata from the registry for image \"eu.gcr.io/cv-building-go/app-engine-tmp/app/default/ttl-18h:703784c4-3261-48fb-aa38-777e06dbaaee\", with reason: fetchImageMetadata from registry \"eu.gcr.io\" failed to fetch container for image \"eu.gcr.io/cv-building-go/app-engine-tmp/app/default/ttl-18h:703784c4-3261-48fb-aa38-777e06dbaaee\": generic::permission_denied: error fetching manifest (digest \"sha256:de23d7f6e83ca7736db498c0dc738bb1ca35a3c6978ce33dabee6bc1842f89c5\"): generic::permission_denied: HTTP/403 from http://storage.googleapis.com/eu.artifacts.cv-building-go.appspot.com/containers/images/sha256:de23d7f6e83ca7736db498c0dc738bb1ca35a3c6978ce33dabee6bc1842f89c5"
+    },
+    "metadata": {
+        "@type": "type.googleapis.com/google.appengine.v1.OperationMetadataV1",
+        "createVersionMetadata": {},
+        "endTime": "2025-01-28T12:25:54.369Z",
+        "insertTime": "2025-01-28T12:22:34.285Z",
+        "method": "google.appengine.v1.Versions.CreateVersion",
+        "target": "apps/cv-building-go/services/default/versions/20250128t152230",
+        "user": "aliaksandr.rutkouski@innowise.com"
+    },
+    "name": "apps/cv-building-go/operations/703784c4-3261-48fb-aa38-777e06dbaaee"
+}
+2025-01-28 15:25:58,825 DEBUG    root            (gcloud.app.deploy) Error Response: [7] failed to fetch metadata: generic::permission_denied: failed to fetch metadata from the registry for image "eu.gcr.io/cv-building-go/app-engine-tmp/app/default/ttl-18h:703784c4-3261-48fb-aa38-777e06dbaaee", with reason: fetchImageMetadata from registry "eu.gcr.io" failed to fetch container for image "eu.gcr.io/cv-building-go/app-engine-tmp/app/default/ttl-18h:703784c4-3261-48fb-aa38-777e06dbaaee": generic::permission_denied: error fetching manifest (digest "sha256:de23d7f6e83ca7736db498c0dc738bb1ca35a3c6978ce33dabee6bc1842f89c5"): generic::permission_denied: HTTP/403 from http://storage.googleapis.com/eu.artifacts.cv-building-go.appspot.com/containers/images/sha256:de23d7f6e83ca7736db498c0dc738bb1ca35a3c6978ce33dabee6bc1842f89c5
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/493.0.0/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 998, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/493.0.0/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 934, in Run
+    resources = command_instance.Run(args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/493.0.0/google-cloud-sdk/lib/surface/app/deploy.py", line 122, in Run
+    return deploy_util.RunDeploy(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/493.0.0/google-cloud-sdk/lib/googlecloudsdk/command_lib/app/deploy_util.py", line 677, in RunDeploy
+    deployer.Deploy(
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/493.0.0/google-cloud-sdk/lib/googlecloudsdk/command_lib/app/deploy_util.py", line 471, in Deploy
+    self.api_client.DeployService(new_version.service, new_version.id,
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/493.0.0/google-cloud-sdk/lib/googlecloudsdk/api_lib/app/appengine_api_client.py", line 254, in DeployService
+    return operations_util.WaitForOperation(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/493.0.0/google-cloud-sdk/lib/googlecloudsdk/api_lib/app/operations_util.py", line 307, in WaitForOperation
+    completed_operation = waiter.WaitFor(
+                          ^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/493.0.0/google-cloud-sdk/lib/googlecloudsdk/api_lib/util/waiter.py", line 261, in WaitFor
+    operation = PollUntilDone(
+                ^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/493.0.0/google-cloud-sdk/lib/googlecloudsdk/api_lib/util/waiter.py", line 322, in PollUntilDone
+    operation = retryer.RetryOnResult(
+                ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/493.0.0/google-cloud-sdk/lib/googlecloudsdk/core/util/retry.py", line 249, in RetryOnResult
+    if not should_retry(result, state):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/493.0.0/google-cloud-sdk/lib/googlecloudsdk/api_lib/util/waiter.py", line 320, in _IsNotDone
+    return not poller.IsDone(operation)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/493.0.0/google-cloud-sdk/lib/googlecloudsdk/api_lib/app/operations_util.py", line 182, in IsDone
+    raise OperationError(requests.ExtractErrorMessage(
+googlecloudsdk.api_lib.app.operations_util.OperationError: Error Response: [7] failed to fetch metadata: generic::permission_denied: failed to fetch metadata from the registry for image "eu.gcr.io/cv-building-go/app-engine-tmp/app/default/ttl-18h:703784c4-3261-48fb-aa38-777e06dbaaee", with reason: fetchImageMetadata from registry "eu.gcr.io" failed to fetch container for image "eu.gcr.io/cv-building-go/app-engine-tmp/app/default/ttl-18h:703784c4-3261-48fb-aa38-777e06dbaaee": generic::permission_denied: error fetching manifest (digest "sha256:de23d7f6e83ca7736db498c0dc738bb1ca35a3c6978ce33dabee6bc1842f89c5"): generic::permission_denied: HTTP/403 from http://storage.googleapis.com/eu.artifacts.cv-building-go.appspot.com/containers/images/sha256:de23d7f6e83ca7736db498c0dc738bb1ca35a3c6978ce33dabee6bc1842f89c5
+2025-01-28 15:25:58,836 ERROR    root            (gcloud.app.deploy) Error Response: [7] failed to fetch metadata: generic::permission_denied: failed to fetch metadata from the registry for image "eu.gcr.io/cv-building-go/app-engine-tmp/app/default/ttl-18h:703784c4-3261-48fb-aa38-777e06dbaaee", with reason: fetchImageMetadata from registry "eu.gcr.io" failed to fetch container for image "eu.gcr.io/cv-building-go/app-engine-tmp/app/default/ttl-18h:703784c4-3261-48fb-aa38-777e06dbaaee": generic::permission_denied: error fetching manifest (digest "sha256:de23d7f6e83ca7736db498c0dc738bb1ca35a3c6978ce33dabee6bc1842f89c5"): generic::permission_denied: HTTP/403 from http://storage.googleapis.com/eu.artifacts.cv-building-go.appspot.com/containers/images/sha256:de23d7f6e83ca7736db498c0dc738bb1ca35a3c6978ce33dabee6bc1842f89c5

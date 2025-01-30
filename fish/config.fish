@@ -15,7 +15,6 @@ abbr -a tf terraform
 abbr -a gc 'git checkout'
 abbr -a gs 'git status'
 abbr -a ga 'git add -p'
-abbr -a glab-mr-sanal 'glab mr update --reviewer="+sanal.khokhlov" && glab mr update --assignee="+alexandr.rutkovski"'
 abbr -a ssh-qc-dev 'sshpass -p '74fee854e9664796acff4b09fe68b8f2' ssh kitanoyoru@5.188.119.215 -p 2002'
 
 if status is-interactive

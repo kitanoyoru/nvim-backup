@@ -1,0 +1,9 @@
+2025-01-28 11:18:11,386 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2025-01-28 11:18:11,403 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'set']
+2025-01-28 11:18:11,404 DEBUG    root            Running [gcloud.config.set] with arguments: [SECTION/PROPERTY: "project", VALUE: "cv-building-go"]
+2025-01-28 11:18:11,417 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2025-01-28 11:18:12,232 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects/cv-building-go?alt=json HTTP/1.1" 200 None
+2025-01-28 11:18:12,239 INFO     ___FILE_ONLY___ Updated property [core/project].
+
+2025-01-28 11:18:12,240 DEBUG    root            Chosen display Format:default
+2025-01-28 11:18:12,241 INFO     root            Display format: "default"

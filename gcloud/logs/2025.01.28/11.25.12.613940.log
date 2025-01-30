@@ -1,0 +1,139 @@
+2025-01-28 11:25:12,614 DEBUG    root            Loaded Command Group: ['gcloud', 'app']
+2025-01-28 11:25:12,657 DEBUG    root            Loaded Command Group: ['gcloud', 'app', 'deploy']
+2025-01-28 11:25:12,658 DEBUG    root            Running [gcloud.app.deploy] with arguments: []
+2025-01-28 11:25:12,666 DEBUG    root            Loading runtimes experiment config from [gs://runtime-builders/experiments.yaml]
+2025-01-28 11:25:12,677 INFO     root            Reading [<googlecloudsdk.api_lib.storage.storage_util.ObjectReference object at 0x1077e2290>]
+2025-01-28 11:25:12,872 DEBUG    root            Flex image build option: FlexImageBuildOptions.ON_SERVER
+2025-01-28 11:25:12,880 INFO     root            Executing staging command: [/opt/homebrew/share/google-cloud-sdk/platform/google_appengine/go-app-stager /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/app.yaml /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmpim25j5w6/tmp3414bv2e]
+
+
+2025-01-28 11:25:12,880 DEBUG    root            Executing command: ['/opt/homebrew/share/google-cloud-sdk/platform/google_appengine/go-app-stager', '/Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/app.yaml', '/Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot', '/var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmpim25j5w6/tmp3414bv2e']
+2025-01-28 11:25:12,908 INFO     root            ------------------------------------ STDOUT ------------------------------------
+building with dependencies from go.mod
+------------------------------------ STDERR ------------------------------------
+2025/01/28 11:25:12 staging for go1.21
+main-package: .
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/.gcloudignore to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmpim25j5w6/tmp3414bv2e/.gcloudignore
+skipping /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/.git
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/.gitignore to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmpim25j5w6/tmp3414bv2e/.gitignore
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/README.md to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmpim25j5w6/tmp3414bv2e/README.md
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/app.yaml to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmpim25j5w6/tmp3414bv2e/app.yaml
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/assets/forms/daily_status.json to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmpim25j5w6/tmp3414bv2e/assets/forms/daily_status.json
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/cmd/main.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmpim25j5w6/tmp3414bv2e/cmd/main.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/config/config.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmpim25j5w6/tmp3414bv2e/config/config.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/config/config.yaml to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmpim25j5w6/tmp3414bv2e/config/config.yaml
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/db/migrations/20250120091611_initial_schema.sql to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmpim25j5w6/tmp3414bv2e/db/migrations/20250120091611_initial_schema.sql
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/go.mod to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmpim25j5w6/tmp3414bv2e/go.mod
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/go.sum to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmpim25j5w6/tmp3414bv2e/go.sum
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/handlers/api/daily_status.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmpim25j5w6/tmp3414bv2e/internal/handlers/api/daily_status.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/handlers/api/handler.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmpim25j5w6/tmp3414bv2e/internal/handlers/api/handler.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/handlers/api/weekly_status.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmpim25j5w6/tmp3414bv2e/internal/handlers/api/weekly_status.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/handlers/bot/handler.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmpim25j5w6/tmp3414bv2e/internal/handlers/bot/handler.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/handlers/bot/textcommand/bind.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmpim25j5w6/tmp3414bv2e/internal/handlers/bot/textcommand/bind.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/handlers/bot/textcommand/text_command.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmpim25j5w6/tmp3414bv2e/internal/handlers/bot/textcommand/text_command.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/repositories/db.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmpim25j5w6/tmp3414bv2e/internal/repositories/db.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/repositories/repository.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmpim25j5w6/tmp3414bv2e/internal/repositories/repository.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/router/router.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmpim25j5w6/tmp3414bv2e/internal/router/router.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/services/event/service.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmpim25j5w6/tmp3414bv2e/internal/services/event/service.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/services/googlechat/daily_status.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmpim25j5w6/tmp3414bv2e/internal/services/googlechat/daily_status.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/services/googlechat/messenger.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmpim25j5w6/tmp3414bv2e/internal/services/googlechat/messenger.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/services/googlechat/service.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmpim25j5w6/tmp3414bv2e/internal/services/googlechat/service.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/services/googlechat/weekly_plan.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmpim25j5w6/tmp3414bv2e/internal/services/googlechat/weekly_plan.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/services/services.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmpim25j5w6/tmp3414bv2e/internal/services/services.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/internal/services/user/service.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmpim25j5w6/tmp3414bv2e/internal/services/user/service.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/logging/logging.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmpim25j5w6/tmp3414bv2e/logging/logging.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/server/server.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmpim25j5w6/tmp3414bv2e/server/server.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/util/oauth_client.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmpim25j5w6/tmp3414bv2e/util/oauth_client.go
+copied /Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/util/working_days.go to /var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmpim25j5w6/tmp3414bv2e/util/working_days.go
+--------------------------------------------------------------------------------
+
+2025-01-28 11:25:12,908 DEBUG    root            API endpoint: [https://appengine.googleapis.com/], API version: [v1]
+2025-01-28 11:25:13,110 INFO     ___FILE_ONLY___ Services to deploy:
+
+
+2025-01-28 11:25:13,111 INFO     ___FILE_ONLY___ descriptor:                  [/Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/app.yaml]
+source:                      [/Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot]
+target project:              [cv-building-go]
+target service:              [default]
+target version:              [20250128t112513]
+target url:                  [https://cv-building-go.lm.r.appspot.com]
+target service account:      [cv-stat-bot-service-account@cv-building-go.iam.gserviceaccount.com]
+
+
+
+2025-01-28 11:25:13,769 DEBUG    root            No bucket specified, retrieving default bucket.
+2025-01-28 11:25:13,774 DEBUG    root            Using bucket [gs://staging.cv-building-go.appspot.com].
+2025-01-28 11:25:13,860 INFO     ___FILE_ONLY___ Beginning deployment of service [default]...
+
+2025-01-28 11:25:13,862 INFO     root            Using ignore file at [/Users/kitanoyoru/Documents/Work/Innowise/dev-status-bot/.gcloudignore].
+2025-01-28 11:25:13,863 DEBUG    root            Skipping file [.gitignore]
+2025-01-28 11:25:13,864 DEBUG    root            Skipping file [.gcloudignore]
+2025-01-28 11:25:13,898 DEBUG    root            Could not call git with args ('config', '--get-regexp', 'remote\\.(.*)\\.url'): Command '['git', 'config', '--get-regexp', 'remote\\.(.*)\\.url']' returned non-zero exit status 1.
+2025-01-28 11:25:13,898 INFO     root            Could not find any remote repositories associated with [/var/folders/yv/2png6btd61j09b_wrvf82h3r0000gn/T/tmpim25j5w6/tmp3414bv2e]. Cloud diagnostic tools may not be able to display the correct source code for this deployment.
+2025-01-28 11:25:14,053 DEBUG    root            Could not list bucket [staging.cv-building-go.appspot.com]: [aliaksandr.rutkouski@innowise.com] does not have permission to access b instance [staging.cv-building-go.appspot.com] (or it may not exist): aliaksandr.rutkouski@innowise.com does not have storage.objects.list access to the Google Cloud Storage bucket. Permission 'storage.objects.list' denied on resource (or it may not exist). This command is authenticated as aliaksandr.rutkouski@innowise.com which is the active account specified by the [core/account] property.
+2025-01-28 11:25:14,059 DEBUG    root            (gcloud.app.deploy) 403 Could not list bucket [staging.cv-building-go.appspot.com]: aliaksandr.rutkouski@innowise.com does not have storage.objects.list access to the Google Cloud Storage bucket. Permission 'storage.objects.list' denied on resource (or it may not exist). This command is authenticated as aliaksandr.rutkouski@innowise.com which is the active account specified by the [core/account] property.
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/493.0.0/google-cloud-sdk/lib/googlecloudsdk/api_lib/storage/storage_api.py", line 487, in ListBucket
+    for obj in list_pager.YieldFromList(self.client.objects,
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/493.0.0/google-cloud-sdk/lib/third_party/apitools/base/py/list_pager.py", line 120, in YieldFromList
+    response = getattr(service, method)(request,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/493.0.0/google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/storage/v1/storage_v1_client.py", line 1794, in List
+    return self._RunMethod(
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/493.0.0/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 747, in _RunMethod
+    return self.ProcessHttpResponse(method_config, http_response, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/493.0.0/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 753, in ProcessHttpResponse
+    self.__ProcessHttpResponse(method_config, http_response, request))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/493.0.0/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 612, in __ProcessHttpResponse
+    raise exceptions.HttpError.FromResponse(
+apitools.base.py.exceptions.HttpForbiddenError: HttpError accessing <https://storage.googleapis.com/storage/v1/b/staging.cv-building-go.appspot.com/o?alt=json&maxResults=1000>: response: <{'x-guploader-uploadid': 'AFIdbgRTNCrbt3YaKoyw9XQJMgKuFKjg3D8OOkpNNMubVyI354bNory1EbXMSS5DcjxIUsQI', 'content-type': 'application/json; charset=UTF-8', 'date': 'Tue, 28 Jan 2025 08:25:14 GMT', 'vary': 'Origin, X-Origin', 'cache-control': 'no-cache, no-store, max-age=0, must-revalidate', 'expires': 'Mon, 01 Jan 1990 00:00:00 GMT', 'pragma': 'no-cache', 'content-length': '550', 'server': 'UploadServer', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'status': '403'}>, content <{
+  "error": {
+    "code": 403,
+    "message": "aliaksandr.rutkouski@innowise.com does not have storage.objects.list access to the Google Cloud Storage bucket. Permission 'storage.objects.list' denied on resource (or it may not exist).",
+    "errors": [
+      {
+        "message": "aliaksandr.rutkouski@innowise.com does not have storage.objects.list access to the Google Cloud Storage bucket. Permission 'storage.objects.list' denied on resource (or it may not exist).",
+        "domain": "global",
+        "reason": "forbidden"
+      }
+    ]
+  }
+}
+>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/493.0.0/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 998, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/493.0.0/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 934, in Run
+    resources = command_instance.Run(args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/493.0.0/google-cloud-sdk/lib/surface/app/deploy.py", line 122, in Run
+    return deploy_util.RunDeploy(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/493.0.0/google-cloud-sdk/lib/googlecloudsdk/command_lib/app/deploy_util.py", line 677, in RunDeploy
+    deployer.Deploy(
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/493.0.0/google-cloud-sdk/lib/googlecloudsdk/command_lib/app/deploy_util.py", line 458, in Deploy
+    manifest = self._PossiblyUploadFiles(image, service_info,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/493.0.0/google-cloud-sdk/lib/googlecloudsdk/command_lib/app/deploy_util.py", line 381, in _PossiblyUploadFiles
+    manifest = deploy_app_command_util.CopyFilesToCodeBucket(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/493.0.0/google-cloud-sdk/lib/googlecloudsdk/api_lib/app/deploy_app_command_util.py", line 305, in CopyFilesToCodeBucket
+    files_to_upload = _BuildFileUploadMap(
+                      ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/493.0.0/google-cloud-sdk/lib/googlecloudsdk/api_lib/app/deploy_app_command_util.py", line 195, in _BuildFileUploadMap
+    existing_items = set(o.name for o in storage_client.ListBucket(bucket_ref)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/493.0.0/google-cloud-sdk/lib/googlecloudsdk/api_lib/app/deploy_app_command_util.py", line 195, in <genexpr>
+    existing_items = set(o.name for o in storage_client.ListBucket(bucket_ref)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/493.0.0/google-cloud-sdk/lib/googlecloudsdk/api_lib/storage/storage_api.py", line 497, in ListBucket
+    raise ListBucketError(
+googlecloudsdk.api_lib.storage.storage_api.ListBucketError: 403 Could not list bucket [staging.cv-building-go.appspot.com]: aliaksandr.rutkouski@innowise.com does not have storage.objects.list access to the Google Cloud Storage bucket. Permission 'storage.objects.list' denied on resource (or it may not exist). This command is authenticated as aliaksandr.rutkouski@innowise.com which is the active account specified by the [core/account] property.
+2025-01-28 11:25:14,062 ERROR    root            (gcloud.app.deploy) 403 Could not list bucket [staging.cv-building-go.appspot.com]: aliaksandr.rutkouski@innowise.com does not have storage.objects.list access to the Google Cloud Storage bucket. Permission 'storage.objects.list' denied on resource (or it may not exist). This command is authenticated as aliaksandr.rutkouski@innowise.com which is the active account specified by the [core/account] property.

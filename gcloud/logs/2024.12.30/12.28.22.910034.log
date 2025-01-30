@@ -1,0 +1,15 @@
+2024-12-30 12:28:22,910 DEBUG    root            Loaded Command Group: ['gcloud', 'components']
+2024-12-30 12:28:22,912 DEBUG    root            Loaded Command Group: ['gcloud', 'components', 'update']
+2024-12-30 12:28:22,913 DEBUG    root            Running [gcloud.components.update] with arguments: [--quiet: "True"]
+2024-12-30 12:28:22,936 INFO     ___FILE_ONLY___ Beginning update. This process may take several minutes.
+
+2024-12-30 12:28:22,949 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2024-12-30 12:28:23,059 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-2.json HTTP/1.1" 200 227824
+2024-12-30 12:28:23,130 WARNING  root            The ARM versions of the following components are not available yet, using x86_64 versions instead: [app-engine-grpc].
+2024-12-30 12:28:23,130 INFO     ___FILE_ONLY___ 
+
+2024-12-30 12:28:23,130 INFO     ___FILE_ONLY___ All components are up to date.
+
+2024-12-30 12:28:23,131 DEBUG    root            Updating notification cache...
+2024-12-30 12:28:23,131 DEBUG    root            Chosen display Format:none
+2024-12-30 12:28:23,131 INFO     root            Display format: "none"

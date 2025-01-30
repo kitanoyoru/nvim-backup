@@ -1,0 +1,10 @@
+2025-01-28 11:18:02,536 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2025-01-28 11:18:02,568 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'set']
+2025-01-28 11:18:02,569 DEBUG    root            Running [gcloud.config.set] with arguments: [SECTION/PROPERTY: "project", VALUE: "cv-building-go-dev"]
+2025-01-28 11:18:02,585 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2025-01-28 11:18:03,546 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects/cv-building-go-dev?alt=json HTTP/1.1" 403 None
+2025-01-28 11:18:03,550 WARNING  root            [aliaksandr.rutkouski@innowise.com] does not have permission to access projects instance [cv-building-go-dev] (or it may not exist): The caller does not have permission. This command is authenticated as aliaksandr.rutkouski@innowise.com which is the active account specified by the [core/account] property
+2025-01-28 11:18:04,622 INFO     ___FILE_ONLY___ Updated property [core/project].
+
+2025-01-28 11:18:04,623 DEBUG    root            Chosen display Format:default
+2025-01-28 11:18:04,624 INFO     root            Display format: "default"
